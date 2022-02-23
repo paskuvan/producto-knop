@@ -1,0 +1,56 @@
+/* --------------------------------------------------------
+Producto Específico - Farmacias Knop
+
+Version: 2.0
+Last modified: 23/02/2022 by Farmacias Knop
+Author: Farmacias Knop
+Website: http://farmaciasknop.com
+----------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.verde-claro {
+    color: #83b735;
+}
+
+.verde-oscuro {
+    color: #1c5630;
+}
+
+.naranja {
+    color: #bd551e;
+}
+
+.gris {
+    color: #343230;
+}
+
+.blanco {
+    color: white;
+}
+
+.btn-default {
+    background-color: #1c5630 !important;
+    color: white !important;
+}
+
+.btn-default:hover {
+    background-color: #83b735 !important;
+}
+
