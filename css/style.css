@@ -7,10 +7,10 @@ Author: Farmacias Knop
 Website: http://farmaciasknop.com
 ----------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap");
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .fw-400 {
@@ -23,6 +23,14 @@ body {
 
 .fw-800 {
     font-weight: 800;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
 }
 
 .verde-claro {
@@ -54,31 +62,53 @@ body {
     background-color: #83b735 !important;
 }
 
+.icono01 {
+    width: 45px;
+    height: 45px;
+    padding-bottom:10px;
+    color: #1c5630;
+}
+
 .logotipo {
     width: 70px;
     background-size: cover;
 }
 
 .nav-link {
-    color: white; 
+    color: white;
 }
 
 .navbar-dark .navbar-toggler {
     color: #245830 !important;
 }
 
+.imagen01 {
+    width: 120%;
+    position: relative;
+}
 
+.img-border {
+    border-radius: 10px;
+}
 
 @media (max-width: 768px) {
-    
     .logotipo {
         width: 50px;
         background-size: cover;
     }
-  
-      .feather {
+
+    .feather {
         height: 24px;
         width: 24px;
-      }
-}
+    }
 
+    .imagen01 {
+        width: 100%;
+        position: relative;
+        left: 0px;
+    }
+
+    .boton-tienda {
+        margin: 0px 0 15px 0;
+    }
+}
