@@ -54,3 +54,31 @@ body {
     background-color: #83b735 !important;
 }
 
+.logotipo {
+    width: 70px;
+    background-size: cover;
+}
+
+.nav-link {
+    color: white; 
+}
+
+.navbar-dark .navbar-toggler {
+    color: #245830 !important;
+}
+
+
+
+@media (max-width: 768px) {
+    
+    .logotipo {
+        width: 50px;
+        background-size: cover;
+    }
+  
+      .feather {
+        height: 24px;
+        width: 24px;
+      }
+}
+
