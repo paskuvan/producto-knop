@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Producto - Farmacias Knop</title>
 </head>
 <body>
@@ -72,9 +73,42 @@
         </div>
     </div>
     <!--Sobre producto-->
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-12 mb-5 mt-5">
+                <h1 class="fw-800 verde-oscuro text-center">Sobre producto</h1>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="fw-800 verde-oscuro">Get it deliver to your door</h2>
+                <p class="fw-400 gris fs-16">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non saepe unde sunt suscipit quam consequuntur beatae maxime.</p>
+            </div>
+            <div class="col-lg-6">
+               <div class="animate__animated animate__fadeIn">
+                <img src="img/img01.jpg" alt="" class="imagen01 img-border">
+               </div>
+            </div>
+        </div>
+    </div>
     <!--Beneficios-->
+    <div class="container mb-5 mt-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="animate__animated animate__fadeIn">
+                    <img src="img/img01.jpg" alt="" class="imagen01 img-border">
+                   </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="fw-800 verde-oscuro">Get it deliver to your door</h2>
+                <p class="fw-400 gris fs-16">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non saepe unde sunt suscipit quam consequuntur beatae maxime.</p>
+            </div>
+        </div>
+    </div>
+    <!--Caja de Suscripción-->
+
     <!--Carrousel-->
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiper mb-5 mt-5">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
               <img src="img/img01.jpg" alt="slider">
@@ -96,7 +130,7 @@
       </div>
   
     <!--FAQ-->
-    <!--Caja de Suscripción-->
+    
     <!--Footer-->
 
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -111,6 +145,7 @@
          var swiper = new Swiper(".mySwiper", {
         slidesPerView: 'auto',
         spaceBetween: 30,
+        speed: 2000,
         centeredSlides: true,
             grabCursor: true,
         loop: true,
