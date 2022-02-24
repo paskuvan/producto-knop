@@ -161,10 +161,10 @@
                             <div class="panel panel-default" id="panel1">
                                 <div class="panel-heading">
                                     <h4 class="panel-title fw-500">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="verde-oscuro">
-                                            ¿El producto causa la alergia?
+                                        <p data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="verde-oscuro fw-500 texto-collapse">
+                                            <i data-feather="chevron-down" class="icono-collapse "></i> ¿El producto causa la alergia?
                                             <span class="bar hidden-xs"></span>
-                                        </a>
+                                        </p>
                                     </h4>
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse in">
@@ -177,10 +177,10 @@
                             <div class="panel panel-default" id="panel2">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed verde-oscuro">
-                                            ¿Qué contiene el producto?
+                                        <p data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed verde-oscuro texto-collapse">
+                                            <i data-feather="chevron-down" class="icono-collapse "></i> ¿Qué contiene el producto?
                                             <span class="bar hidden-xs"></span>
-                                        </a>
+                                        </p>
                                     </h4>
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse">
@@ -193,10 +193,10 @@
                             <div class="panel panel-default" id="panel3">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed verde-oscuro">
-                                            ¿El producto pide receta medica?
+                                        <p data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed verde-oscuro texto-collapse">
+                                            <i data-feather="chevron-down" class="icono-collapse "></i> ¿El producto pide receta medica?
                                             <span class="bar hidden-xs"></span>
-                                        </a>
+                                        </p>
                                     </h4>
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse">
@@ -294,34 +294,39 @@
         <script src="js/popper.js"></script>
         <script src="https://unpkg.com/feather-icons"></script>
         <script>
+            //iconos
             feather.replace();
-            $(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+ //smooth scrolling
+ $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
 
-      // Store hash
-      var hash = this.hash;
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 1000, function(){
+                // Store hash
+                var hash = this.hash;
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 2000, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+            });
+           
             
         </script>
         <script>
+            //swiper
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: "auto",
                 spaceBetween: 30,
@@ -352,10 +357,11 @@
 		$('#back-to-top').click(function () {
 			$('body,html').animate({
 				scrollTop: 0
-			}, 400);
+			}, 2000);
 			return false;
 		});
 });
+
         </script>
     </body>
 </html>
