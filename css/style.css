@@ -8,6 +8,7 @@ Website: http://farmaciasknop.com
 ----------------------------------------------------------*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap');
 
 body {
     font-family: "Poppins", sans-serif;
@@ -51,6 +52,14 @@ body {
 
 .blanco {
     color: white;
+}
+
+.amarillo {
+    color: #b5ff00 !important;
+}
+
+.titulo {
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .btn-default {
@@ -203,6 +212,60 @@ body {
     padding-top: 0px;
     color: #60626d;
 }
+
+.footer-bg {
+    background-color: #1c5830;
+    padding: 5px 0;
+}
+
+.list-group-item {
+    background-color: #1c5830 !important;
+    color: white !important;
+}
+
+.email {
+  font-size: 12px;
+}
+
+.telefono {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.horario {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.txt-none {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .txt-none:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+  .b-bottom {
+    border-bottom: 2px solid #b5ff00;
+    padding: 5px 0;
+  }
+
+  #topBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    background: #83b735;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+  }
+
 
 @media (max-width: 768px) {
     .logotipo {
