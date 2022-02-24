@@ -43,12 +43,12 @@
        <div id="producto">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="fw-800 verde-oscuro titulo">Boost your skin with natural extracts.</h1>
+                <div class="col-lg-6 orden-uno">
+                    <h1 class="fw-800 verde-oscuro titulo p-10">Boost your skin with natural extracts.</h1>
                     <p class="fw-500 gris">Natural essence will help you take care of your facial skin and your body's skin moisture.</p>
                     <button type="button" class="btn btn-default mr-3 fw-800 boton-tienda"><i data-feather="shopping-bag"></i> Shop now</button>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 orden-dos">
                     <img src="img/img01.jpg" class="imagen01 img-border" alt="slider" />
                 </div>
             </div>
@@ -84,11 +84,11 @@
                     </div>
                 </div>
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <h2 class="fw-800 verde-oscuro titulo">Get it deliver to your door</h2>
+                    <div class="col-lg-6 orden-tres">
+                        <h2 class="fw-800 verde-oscuro titulo p-10">Get it deliver to your door</h2>
                         <p class="fw-400 gris fs-16">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non saepe unde sunt suscipit quam consequuntur beatae maxime.</p>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 orden-cuatro">
                         <div class="animate__animated animate__fadeIn">
                             <img src="img/img01.jpg" alt="" class="imagen01 img-border" />
                         </div>
@@ -103,7 +103,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <h2 class="fw-800 verde-oscuro titulo">Get it deliver to your door</h2>
+                        <h2 class="fw-800 verde-oscuro titulo p-10">Get it deliver to your door</h2>
                         <p class="fw-400 gris fs-16">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non saepe unde sunt suscipit quam consequuntur beatae maxime.</p>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                 <div class="form-group">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h3 class="fw-800 verde-oscuro titulo text-center mb-4">Suscríbete y recibe las grandes ofertas</h3>
+                            <h3 class="fw-800 verde-oscuro titulo text-center mb-4">Recibe ofertas y contenido natural</h3>
                             <form id="contact-form" method="post" action="saludos.php" role="form">
                                 <div class="form-inline justify-content-center">
                                     <input type="text" id="miNombre" class="form-control" placeholder="Nombre" />
@@ -286,7 +286,7 @@
             </div>
         </div>
 
-        <button id="topBtn"><i data-feather="arrow-up" class="m-left"></i></button>
+        <a id="back-to-top" href="#" class="back-to-top" role="button"><i data-feather="chevron-up" style="color:white;"></i></a>
 
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -295,7 +295,31 @@
         <script src="https://unpkg.com/feather-icons"></script>
         <script>
             feather.replace();
-            var scroll = new SmoothScroll('a[href*="#"]');
+            $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+            
         </script>
         <script>
             var swiper = new Swiper(".mySwiper", {
@@ -316,19 +340,22 @@
             });
 
 
-            $(document).ready(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 40) {
-                        $("#topBtn").fadeIn();
-                    } else {
-                        $("#topBtn").fadeOut();
-                    }
-                });
-
-                $("#topBtn").click(function () {
-                    $("html ,body").animate({ scrollTop: 0 }, 800);
-                });
-            });
+            $(document).ready(function(){
+	        $(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				$('#back-to-top').fadeIn();
+			} else {
+				$('#back-to-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-to-top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 400);
+			return false;
+		});
+});
         </script>
     </body>
 </html>
