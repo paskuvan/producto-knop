@@ -98,7 +98,112 @@ body {
     object-fit: cover;
   }
 
+  .bg-gris {
+      background-color: #EFEFEF;
+      padding: 30px;
+  }
 
+  .collapse-area {
+    background: #D7D8DC;
+  }
+  .panel {
+    margin-top: 0px !important;
+    border-radius: 0px !important;
+    border: none;
+    border-bottom-color: #D7D8DC;
+    box-shadow: 0 0px 0px 0 transparent !important;
+    -moz-box-shadow: 0 0px 0px 0 transparent !important;
+    -webkit-box-shadow: 0 0px 0px 0 transparent !important;
+    -o-box-shadow: 0 0px 0px 0 transparent !important;
+  }
+  .panel .panel-heading {
+    border-radius: 0px !important;
+    background: #f5f6f8;
+    padding: 0px !important;
+    border-bottom: 0px solid #DDDEE2;
+  }
+  .panel .panel-heading .panel-title a {
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    padding: 23px 15px;
+    background-color: #ffffff;
+    line-height: 29px;
+    position: relative;
+  }
+  .panel .panel-heading .panel-title a:hover,
+  .panel .panel-heading .panel-title a:active {
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    color: #83b735;
+  }
+  .panel .panel-heading .panel-title a span {
+    float: left;
+    margin-top: 15px;
+    margin-right: 30px;
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+  }
+  .panel .panel-heading .panel-title a .bar,
+  .panel .panel-heading .panel-title a .bar:after {
+    border-width: 1px;
+    border-style: solid;
+    width: 21px;
+    border-radius: 10px;
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+  }
+  .panel .panel-heading .panel-title a .bar:after {
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 38px;
+    left: 15px;
+  }
+  .panel .panel-heading .panel-title a.collapsed {
+    
+    border-bottom: 1px solid #eeeef3;
+    position: relative;
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+  }
+  .panel .panel-heading .panel-title a.collapsed .bar {
+    border-color: #75767F;
+  }
+  .panel .panel-heading .panel-title a.collapsed .bar:after {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    border-color: #75767F;
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+  }
+  .panel-collapse {
+    background-color: #ffffff;
+  }
+  .panel-collapse .panel-body {
+    background-color: #ffffff;
+    border: 0px solid !important;
+    line-height: 26px;
+    font-weight: 400;
+    margin-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    color: #60626d;
+  }
 
 @media (max-width: 768px) {
     .logotipo {
@@ -163,6 +268,18 @@ body {
       .swiper {
         margin-left: auto;
         margin-right: auto;
+      }
+
+      .form-control {
+          margin: 5px 0;
+      }
+
+      .boton {
+          margin: 5px 0;
+      }
+
+      .hidden-xs {
+          display: none;
       }
 
     
