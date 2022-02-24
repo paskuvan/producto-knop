@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>Producto - Farmacias Knop</title>
 </head>
 <body>
@@ -73,16 +74,55 @@
     <!--Sobre producto-->
     <!--Beneficios-->
     <!--Carrousel-->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <img src="img/img01.jpg" alt="slider">
+            </div>
+          <div class="swiper-slide">
+            <img src="img/img01.jpg" alt="slider">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img01.jpg" alt="slider">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/img01.jpg" alt="slider">
+          </div>
+        </div>
+        
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+  
     <!--FAQ-->
     <!--Caja de Suscripción-->
     <!--Footer-->
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
         feather.replace();
     </script>
+     <script>
+         var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        centeredSlides: true,
+            grabCursor: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      </script>
 </body>
 </html>
