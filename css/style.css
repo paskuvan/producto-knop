@@ -97,6 +97,11 @@ body {
     position: relative;
 }
 
+.imagen02 {
+    width: 80%;
+    position: relative;
+}
+
 .img-border {
     border-radius: 10px;
 }
