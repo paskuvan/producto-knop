@@ -35,6 +35,10 @@ body {
     font-size: 18px;
 }
 
+.mt-7 {
+    margin-top:7rem;
+}
+
 .verde-claro {
     color: #83b735;
 }
@@ -80,7 +84,7 @@ body {
 }
 
 .logotipo {
-    width: 70px;
+    width: 250px;
     background-size: cover;
 }
 
@@ -121,104 +125,6 @@ body {
 .collapse-area {
     background: #d7d8dc;
 }
-.panel {
-    padding: 10px 0;
-    margin-top: 0px !important;
-    border-radius: 0px !important;
-    border: none;
-    border-bottom-color: #d7d8dc;
-    box-shadow: 0 0px 0px 0 transparent !important;
-    -moz-box-shadow: 0 0px 0px 0 transparent !important;
-    -webkit-box-shadow: 0 0px 0px 0 transparent !important;
-    -o-box-shadow: 0 0px 0px 0 transparent !important;
-}
-.panel .panel-heading {
-    border-radius: 0px !important;
-    background: white;
-    padding: 0px !important;
-    border-bottom: 0px solid #dddee2;
-}
-.panel .panel-heading .panel-title a {
-    text-decoration: none;
-    display: block;
-    font-size: 20px;
-    padding: 23px 15px;
-    background-color: #ffffff;
-    line-height: 29px;
-    position: relative;
-}
-.panel .panel-heading .panel-title a:hover,
-.panel .panel-heading .panel-title a:active {
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    color: #83b735;
-}
-.panel .panel-heading .panel-title a span {
-    float: left;
-    margin-top: 15px;
-    margin-right: 30px;
-    transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-}
-.panel .panel-heading .panel-title a .bar,
-.panel .panel-heading .panel-title a .bar:after {
-    border-width: 1px;
-    border-style: solid;
-    width: 21px;
-    border-radius: 10px;
-    transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-}
-.panel .panel-heading .panel-title a .bar:after {
-    content: "";
-    height: 0;
-    position: absolute;
-    top: 38px;
-    left: 15px;
-}
-.panel .panel-heading .panel-title a.collapsed {
-    border-bottom: 1px solid #eeeef3;
-    position: relative;
-    transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-}
-.panel .panel-heading .panel-title a.collapsed .bar {
-    border-color: #75767f;
-}
-.panel .panel-heading .panel-title a.collapsed .bar:after {
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    border-color: #75767f;
-    transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-}
-.panel-collapse {
-    background-color: #ffffff;
-}
-.panel-collapse .panel-body {
-    background-color: #ffffff;
-    border: 0px solid !important;
-    line-height: 26px;
-    font-weight: 400;
-    padding-bottom: 20px;
-    padding-top: 0px;
-    color: #60626d;
-}
-
 .footer-bg {
     background-color: #1c5830;
     padding: 5px 0;
@@ -289,8 +195,9 @@ body {
 
 @media (max-width: 768px) {
     .logotipo {
-        width: 50px;
+        width: 220px;
         background-size: cover;
+        
     }
 
     .feather {
@@ -313,39 +220,8 @@ body {
         height: 50px;
     }
 
-    .swiper {
-        width: 100%;
-        height: 50%;
-    }
-
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 50%;
-        object-fit: cover;
-    }
-
-    .swiper {
-        margin-left: auto;
-        margin-right: auto;
+    .mt-7 {
+        margin-top: 3rem;
     }
 
     .form-control {
@@ -362,6 +238,13 @@ body {
 
     .p-10 {
         padding:10px 0;
+    }
+
+    
+    .logotipo-footer {
+        width: 250px;
+        background-size: cover;
+        padding: 10px;
     }
 
     .orden-uno {order:2;}
