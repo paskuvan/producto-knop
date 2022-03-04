@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <title>LiveShopping - Farmacias Knop</title>
@@ -40,41 +40,60 @@
             </div>
         </nav>
         <!--Slider-->
-       <div id="producto">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 orden-uno">
-                    <h1 class="fw-800 verde-oscuro titulo p-10">Boost your skin with natural extracts.</h1>
-                    <p class="fw-500 gris">Natural essence will help you take care of your facial skin and your body's skin moisture.</p>
-                    <button type="button" class="btn btn-default mr-3 fw-800 boton-tienda"><i data-feather="shopping-bag"></i> Shop now</button>
+        <div id="producto">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 orden-uno">
+                        <h1 class="fw-800 verde-oscuro titulo p-10">Boost your skin with natural extracts.</h1>
+                        <p class="fw-500 gris">Natural essence will help you take care of your facial skin and your body's skin moisture.</p>
+                        <button type="button" class="btn btn-default mr-3 fw-800 boton-tienda"><i data-feather="shopping-bag"></i> Shop now</button>
+                    </div>
+                    <div class="col-lg-8 orden-dos">
+                        <!-- Paste the following into the <head>  -->
+                        <link href="https://vjs.zencdn.net/7.3.0/video-js.css" rel="stylesheet" />
+                        <link href="https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css" rel="stylesheet" />
+
+                        <!-- Paste the following into the <body> -->
+                        <video id="videojs" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered" controls preload="auto">
+                            <source src="https://panel.dattalive.com:443/8146/8146/playlist.m3u8" type="application/x-mpegURL" />
+                            <source src="rtmps://panel.dattalive.com:443/8146/8146" type="application/flash" />
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                            </p>
+                        </video>
+
+                        <script src="https://vjs.zencdn.net/7.3.0/video.js"></script>
+
+                        <script src="https://unpkg.com/silvermine-videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js"></script>
+                        <script type="text/javascript">
+                            var player = videojs("videojs");
+                        </script>
+                    </div>
                 </div>
-                <div class="col-lg-6 orden-dos">
-                    <img src="img/img01.jpg" class="imagen01 img-border" alt="slider" />
+            </div>
+
+            <!--Sobre producto-->
+            <div class="container mb-5 mt-5">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <i data-feather="feather" class="icono01"></i>
+                        <h3 class="fw-800 verde-oscuro titulo fs-18">Tell us about yourself</h3>
+                        <p class="fw-400 gris fs-16">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non saepe unde sunt suscipit quam consequuntur beatae maxime.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <i data-feather="plus-circle" class="icono01"></i>
+                        <h3 class="fw-800 verde-oscuro titulo fs-18">Personalize your create</h3>
+                        <p class="fw-400 gris fs-16">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non saepe unde sunt suscipit quam consequuntur beatae maxime.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <i data-feather="check-circle" class="icono01"></i>
+                        <h3 class="fw-800 verde-oscuro titulo fs-18">Get it deliver to your door</h3>
+                        <p class="fw-400 gris fs-16">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non saepe unde sunt suscipit quam consequuntur beatae maxime.</p>
+                    </div>
                 </div>
             </div>
         </div>
-       
-        <!--Sobre producto-->
-        <div class="container mb-5 mt-5">
-            <div class="row">
-                <div class="col-lg-4">
-                    <i data-feather="feather" class="icono01"></i>
-                    <h3 class="fw-800 verde-oscuro titulo fs-18">Tell us about yourself</h3>
-                    <p class="fw-400 gris fs-16">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non saepe unde sunt suscipit quam consequuntur beatae maxime.</p>
-                </div>
-                <div class="col-lg-4">
-                    <i data-feather="plus-circle" class="icono01"></i>
-                    <h3 class="fw-800 verde-oscuro titulo fs-18">Personalize your create</h3>
-                    <p class="fw-400 gris fs-16">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non saepe unde sunt suscipit quam consequuntur beatae maxime.</p>
-                </div>
-                <div class="col-lg-4">
-                    <i data-feather="check-circle" class="icono01"></i>
-                    <h3 class="fw-800 verde-oscuro titulo fs-18">Get it deliver to your door</h3>
-                    <p class="fw-400 gris fs-16">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non saepe unde sunt suscipit quam consequuntur beatae maxime.</p>
-                </div>
-            </div>
-        </div>
-    </div>
         <!--Beneficios-->
         <div id="beneficios">
             <div class="container">
@@ -151,58 +170,59 @@
         </div>
 
         <!--FAQ-->
-       <div id="faq">
-        <div class="container mt-5 mb-5">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="fw-800 verde-oscuro text-center titulo mb-4">FAQ</h3>
-                    <div class="collapse-tab col-xs-12">
-                        <div class="panel-group" id="accordion">
-                            <div class="panel panel-default" id="panel1">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title fw-500">
-                                        <p data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="verde-oscuro fw-500 texto-collapse">
-                                            <i data-feather="chevron-down" class="icono-collapse "></i> ¿El producto causa la alergia?
-                                            <span class="bar hidden-xs"></span>
-                                        </p>
-                                    </h4>
-                                </div>
-                                <div id="collapseOne" class="panel-collapse collapse in">
-                                    <div class="panel-body gris">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                                        eiusmod.
+        <div id="faq">
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="fw-800 verde-oscuro text-center titulo mb-4">FAQ</h3>
+                        <div class="collapse-tab col-xs-12">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default" id="panel1">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title fw-500">
+                                            <p data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="verde-oscuro fw-500 texto-collapse">
+                                                <i data-feather="chevron-down" class="icono-collapse"></i> ¿El producto causa la alergia?
+                                                <span class="bar hidden-xs"></span>
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in">
+                                        <div class="panel-body gris">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                            eiusmod.
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="panel panel-default" id="panel2">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <p data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed verde-oscuro texto-collapse">
-                                            <i data-feather="chevron-down" class="icono-collapse "></i> ¿Qué contiene el producto?
-                                            <span class="bar hidden-xs"></span>
-                                        </p>
-                                    </h4>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse">
-                                    <div class="panel-body gris">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                                        eiusmod.
+                                <div class="panel panel-default" id="panel2">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <p data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed verde-oscuro texto-collapse">
+                                                <i data-feather="chevron-down" class="icono-collapse"></i> ¿Qué contiene el producto?
+                                                <span class="bar hidden-xs"></span>
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse">
+                                        <div class="panel-body gris">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                            eiusmod.
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="panel panel-default" id="panel3">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <p data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed verde-oscuro texto-collapse">
-                                            <i data-feather="chevron-down" class="icono-collapse "></i> ¿El producto pide receta medica?
-                                            <span class="bar hidden-xs"></span>
-                                        </p>
-                                    </h4>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse">
-                                    <div class="panel-body gris">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                                        eiusmod.
+                                <div class="panel panel-default" id="panel3">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <p data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed verde-oscuro texto-collapse">
+                                                <i data-feather="chevron-down" class="icono-collapse"></i> ¿El producto pide receta medica?
+                                                <span class="bar hidden-xs"></span>
+                                            </p>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse">
+                                        <div class="panel-body gris">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                            eiusmod.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -211,7 +231,6 @@
                 </div>
             </div>
         </div>
-       </div>
         <!--Footer-->
         <div class="footer-bg">
             <div class="container mt-5">
@@ -243,15 +262,15 @@
                     <div class="col-lg-3">
                         <ul class="list-group text-end display-none">
                             <li class="list-group-item" style="border: none; font-size: 15px;"><strong class="b-bottom">E-COMMERCE</strong></li>
-                            <li class="list-group-item " style="border: none;"><a href="#" class="txt-none">Envíos</a></li>
-                            <li class="list-group-item " style="border: none;"><a href="#" class="txt-none">Formas de Pagos</a></li>
-                            <li class="list-group-item " style="border: none;"><a href="#" class="txt-none">Cómo comprar</a></li>
-                            <li class="list-group-item " style="border: none;"><a href="#" class="txt-none">Garantía y Devoluciones</a></li>
-                            <li class="list-group-item " style="border: none;"><a href="#" class="txt-none">Términos y Condiciones</a></li>
-                            <li class="list-group-item " style="border: none;"><a href="#" class="txt-none">Medicamentos de Venta Directa</a></li>
-                            <li class="list-group-item " style="border: none;"><a href="#" class="txt-none">Información Reglamentaria</a></li>
-                            <li class="list-group-item " style="border: none;"><a href="#" class="txt-none">Cobertura Nacional</a></li>
-                            <li class="list-group-item " style="border: none;"><a href="#" class="txt-none">Formulario de Reclamos</a></li>
+                            <li class="list-group-item" style="border: none;"><a href="#" class="txt-none">Envíos</a></li>
+                            <li class="list-group-item" style="border: none;"><a href="#" class="txt-none">Formas de Pagos</a></li>
+                            <li class="list-group-item" style="border: none;"><a href="#" class="txt-none">Cómo comprar</a></li>
+                            <li class="list-group-item" style="border: none;"><a href="#" class="txt-none">Garantía y Devoluciones</a></li>
+                            <li class="list-group-item" style="border: none;"><a href="#" class="txt-none">Términos y Condiciones</a></li>
+                            <li class="list-group-item" style="border: none;"><a href="#" class="txt-none">Medicamentos de Venta Directa</a></li>
+                            <li class="list-group-item" style="border: none;"><a href="#" class="txt-none">Información Reglamentaria</a></li>
+                            <li class="list-group-item" style="border: none;"><a href="#" class="txt-none">Cobertura Nacional</a></li>
+                            <li class="list-group-item" style="border: none;"><a href="#" class="txt-none">Formulario de Reclamos</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3">
@@ -278,7 +297,7 @@
         <!--Copyright-->
         <div class="footer-bg">
             <div class="container">
-                <div class="row  mt-5 mb-5">
+                <div class="row mt-5 mb-5">
                     <div class="col-lg-12">
                         <p class="text-center blanco">FARMACIAS KNOP © 2022. <span class="amarillo">Los mejores productos naturales de Chile a un Click.</span></p>
                     </div>
@@ -286,7 +305,7 @@
             </div>
         </div>
 
-        <a id="back-to-top" href="#" class="back-to-top" role="button"><i data-feather="chevron-up" style="color:white;"></i></a>
+        <a id="back-to-top" href="#" class="back-to-top" role="button"><i data-feather="chevron-up" style="color: white;"></i></a>
 
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -297,33 +316,33 @@
             //iconos
             feather.replace();
 
- //smooth scrolling
- $(document).ready(function(){
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
+            //smooth scrolling
+            $(document).ready(function () {
+                // Add smooth scrolling to all links
+                $("a").on("click", function (event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
 
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
+                        // Store hash
+                        var hash = this.hash;
 
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 2000, function(){
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                        $("html, body").animate(
+                            {
+                                scrollTop: $(hash).offset().top,
+                            },
+                            2000,
+                            function () {
+                                // Add hash (#) to URL when done scrolling (default click behavior)
+                                window.location.hash = hash;
+                            }
+                        );
+                    } // End if
                 });
-                } // End if
             });
-            });
-           
-            
         </script>
         <script>
             //swiper
@@ -344,24 +363,25 @@
                 },
             });
 
-
-            $(document).ready(function(){
-	        $(window).scroll(function () {
-			if ($(this).scrollTop() > 50) {
-				$('#back-to-top').fadeIn();
-			} else {
-				$('#back-to-top').fadeOut();
-			}
-		});
-		// scroll body to 0px on click
-		$('#back-to-top').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 2000);
-			return false;
-		});
-});
-
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 50) {
+                        $("#back-to-top").fadeIn();
+                    } else {
+                        $("#back-to-top").fadeOut();
+                    }
+                });
+                // scroll body to 0px on click
+                $("#back-to-top").click(function () {
+                    $("body,html").animate(
+                        {
+                            scrollTop: 0,
+                        },
+                        2000
+                    );
+                    return false;
+                });
+            });
         </script>
     </body>
 </html>
