@@ -15,97 +15,18 @@
         <title>Live Shopping - Farmacias Knop</title>
     </head>
     <body>
-        <!--Menu-->
-        <nav class="navbar navbar-expand-lg navbar-light">
+       
+         <!--Menu-->
+         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#"><img src="img/logo.png" class="logotipo" alt="" /></a>
         </nav>
-        <!--Slider-->
-        <div id="producto">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 orden-uno">
-                        <h1 class="fw-800 verde-oscuro titulo p-10">Bienvenidos</h1>
-                        <p class="fw-500 gris">Disfruta de 1 hora de sorpresas y ofertas especiales con Farmacias Knop</p>
-                        <a href="https://www.farmaciasknop.com/"> <button type="button" class="btn btn-default mr-3 fw-800 boton-tienda">Farmaciasknop.com</button></a>
-                    </div>
-                    <div class="col-lg-8 orden-dos">
-                        <!-- Paste the following into the <head>  -->
-                        <link href="https://vjs.zencdn.net/7.3.0/video-js.css" rel="stylesheet" />
-                        <link href="https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css" rel="stylesheet" />
-
-                        <!-- Paste the following into the <body> -->
-                        <video id="videojs" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered" controls preload="auto">
-                            <source src="https://panel.dattalive.com:443/8146/8146/playlist.m3u8" type="application/x-mpegURL" />
-                            <source src="rtmps://panel.dattalive.com:443/8146/8146" type="application/flash" />
-                            <p class="vjs-no-js">
-                                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                            </p>
-                        </video>
-
-                        <script src="https://vjs.zencdn.net/7.3.0/video.js"></script>
-
-                        <script src="https://unpkg.com/silvermine-videojs-quality-selector/dist/js/silvermine-videojs-quality-selector.min.js"></script>
-                        <script type="text/javascript">
-                            var player = videojs("videojs");
-                        </script>
-                    </div>
-                </div>
-            </div>
-
-            <!--Sobre producto-->
-            <div class="container mb-5 mt-7">
-                <div class="row">
-                    <div class="col-lg-12 mb-2">
-                        <h1 class="fw-800 verde-oscuro titulo p-10 text-center">Ofertas Irresistibles</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                       
-                        <img src="img/hamlet-bg.png" class="imagen02  img-border mx-auto d-block" alt="">
-                        <h3 class="fw-800 verde-oscuro titulo fs-18 mt-2">Chocolate Hamlet 60% Cacaci 50g, Hamlet</h3>
-                        <p class="fw-400 gris fs-16">Chocolate 60% cacao, libre de azúcar y libre de gluten, aporta menos calorías que un chocolate tradicional.</p>
-                        <a href="https://www.farmaciasknop.com/producto/chocolate-hamlet-60-cacaci-50g-hamlet/"> <button type="button" class="btn btn-default mr-3 fw-800 boton-tienda">Comprar</button></a>
-                    </div>
-                    <div class="col-lg-4">
-                       
-                        <img src="img/coco-bg.png" class="imagen02 img-border mx-auto d-block" alt="">
-                        <h3 class="fw-800 verde-oscuro titulo fs-18 mt-2">Aceite de Coco Orgánico 500 mL Chakra</h3>
-                        <p class="fw-400 gris fs-16">Aceite vegetal, alto en ácido láurico. En la cocina es delicioso y nutritivo, puede ser consumido en jugos y batidos, para cocinar y hornear.</p>
-                        <a href="https://www.farmaciasknop.com/producto/aceite-de-coco-organico-500-ml-pharmaknop/"> <button type="button" class="btn btn-default mr-3 fw-800 boton-tienda">Comprar</button></a>
-                    </div>
-                    <div class="col-lg-4">
-                       
-                        <img src="img/locion-bg.png" class="imagen02  img-border mx-auto d-block" alt="">
-                        <h3 class="fw-800 verde-oscuro titulo fs-18 mt-2">Pack Leche Virginal Loción 250 mL + Crema de Día 50 g</h3>
-                        <p class="fw-400 gris fs-16">Loción Hidratante Leche Virginal ®, es una loción natural cosmética que protege la epidermis y alivia la piel cansada.
-                        </p>
-                        <a href="https://www.farmaciasknop.com/producto/pack-leche-virginal-locion-250-ml-crema-de-dia-50-g-pharma-knop/"> <button type="button" class="btn btn-default mr-3 fw-800 boton-tienda">Comprar</button></a>
-                    </div>
-                </div>
+       <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+             <h1 class="fw-800 verde-oscuro titulo text-center">Gracias por la suscripción</h1>
             </div>
         </div>
-
-        <!--Caja de Suscripción-->
-        <div class="bg-gris">
-            <div class="container mt-5 mb-5">
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h3 class="fw-800 verde-oscuro titulo text-center mb-4">Regístrate y participa por 1 premio sorpresa!</h3>
-                            <form id="contact-form" method="post" action="saludos.php" role="form">
-                                <div class="form-inline justify-content-center">
-                                    <input type="text" id="miNombre" class="form-control" placeholder="Nombre" />
-                                    <input type="email" id="miCorreo" class="form-control" placeholder="Email" />
-                                    <button type="submit" class="btn btn-default boton">Suscribirme</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 
         <!--Footer-->
         <div class="footer-bg">
